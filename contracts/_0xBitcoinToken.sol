@@ -3,15 +3,15 @@ pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
 
-// '0xBitcoin Token' contract
+// '0xPigycoin Token' contract
 
 // Mineable ERC20 Token using Proof Of Work
 
 //
 
-// Symbol      : 0xBTC
+// Symbol      : 0xPIGY
 
-// Name        : 0xBitcoin Token
+// Name        : 0xPigycoin Token
 
 // Total supply: 21,000,000.00
 
@@ -192,7 +192,7 @@ contract Owned {
 
 // ----------------------------------------------------------------------------
 
-contract _0xBitcoinToken is ERC20Interface, Owned {
+contract _0xPigycoinToken is ERC20Interface, Owned {
 
     using SafeMath for uint;
     using ExtendedMath for uint;
@@ -265,9 +265,9 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
 
 
 
-        symbol = "0xBTC";
+        symbol = "0xPIGY";
 
-        name = "0xBitcoin Token";
+        name = "0xPigycoin Token";
 
         decimals = 8;
 
@@ -390,7 +390,7 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
         uint ethBlocksSinceLastDifficultyPeriod = block.number - latestDifficultyPeriodStarted;
         //assume 360 ethereum blocks per hour
 
-        //we want miners to spend 10 minutes to mine each 'block', about 60 ethereum blocks = one 0xbitcoin epoch
+        //we want miners to spend 10 minutes to mine each 'block', about 60 ethereum blocks = one 0xpigycoin epoch
         uint epochsMined = _BLOCKS_PER_READJUSTMENT; //256
 
         uint targetEthBlocksPerDiffPeriod = epochsMined * 60; //should be 60 times slower than ethereum
