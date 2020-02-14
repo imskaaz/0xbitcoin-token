@@ -261,7 +261,7 @@ contract _0xPigycoinToken is ERC20Interface, Owned {
 
     // ------------------------------------------------------------------------
 
-    function _0xBitcoinToken() public onlyOwner{
+    function _0xPigycoinToken() public onlyOwner{
 
 
 
